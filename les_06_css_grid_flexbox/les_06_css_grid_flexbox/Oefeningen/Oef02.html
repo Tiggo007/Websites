@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Oef02</title>
+    <style>
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1.3fr 2.6fr;
+        grid-template-rows: 1.3fr 1.3fr 1.3fr;
+        grid-template-areas: "nav nav" "sidebar main" "sidebar main" "footer footer ";
+        grid-gap: 0.4rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        font-size: 12pt;
+        color: white;
+        text-align: center;
+      }
+
+      header {
+        background: #0051ff;
+        grid-area: nav;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+      }
+
+      main {
+        background: #000000;
+        grid-area: main;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+      }
+
+      #aside {
+        background: #66e002;
+        grid-area: sidebar;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+      }
+
+      footer {
+        background: #ff8800;
+        grid-area: footer;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>Header</header>
+      <main>Main</main>
+      <section id="aside">Aside</section>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>
